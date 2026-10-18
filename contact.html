@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me || Frida Carolina</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Frida<span>.Purba</span></a>
+            <nav class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="biodata.html"><i class="fas fa-user"></i> Biodata</a>
+                <a href="myHoliday.html"><i class="fas fa-plane"></i> My Holiday</a>
+                <a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact Me</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <h1 class="page-title">Hubungi Saya</h1>
+        <p class="page-description">Apakah Anda memiliki pertanyaan, peluang kolaborasi, atau sekadar ingin menyapa? Silakan kirim pesan melalui formulir di bawah ini atau hubungi media sosial saya.</p>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <h2>Formulir Pesan</h2>
+                <form action="mailto:frida.purba@unai.edu" method="post" enctype="text/plain" class="contact-form">
+                    <div class="form-group">
+                        <label for="fullName">Nama Lengkap <span class="required">*</span></label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Masukkan nama Anda" required minlength="3">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Alamat Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="contoh@domain.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subjek Pesan <span class="required">*</span></label>
+                        <input type="text" id="subject" name="subject" placeholder="Subjek diskusi atau pertanyaan" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Pesan Anda <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tuliskan pesan lengkap Anda di sini..." required minlength="10"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-paper-plane"></i> Kirim Pesan</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <div class="card info-box">
+                    <h2><i class="fas fa-address-book"></i> Informasi Kontak</h2>
+                    <div class="info-item">
+                        <i class="fas fa-envelope icon"></i>
+                        <div>
+                            <h4>Email Langsung</h4>
+                            <a href="mailto:frida.purba@unai.edu">2481005@unai.edu</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-instagram icon"></i>
+                        <div>
+                            <h4>Instagram</h4>
+                            <a href="https://www.instagram.com/madeby.frida_btw?psln=MTFkbHduNzhha3J1MQ==" target="_blank">@madeby.frida_btw</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-github icon"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/2481005" target="_blank">github.com/2481005</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-linkedin icon"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://linkedin.com/in/fridapurba" target="_blank">linkedin.com/in/fridapurba</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Frida Carolina Br Purba. Universitas Advent Indonesia.</p>
+            <div class="social-links">
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
