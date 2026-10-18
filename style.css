@@ -1,9 +1,9 @@
 /* Reset CSS & Variables */
 :root {
-  --primary: #e05ce7;
+  --primary:var(--accent);
   --primary-dark: #5849be;
   --secondary: #a29bfe;
-  --accent: #fd79a8;
+  --accent: #ffcadc;
   --dark: #2d3436;
   --light: #f8f9fa;
   --white: #ffffff;
@@ -36,6 +36,7 @@ body {
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
+  color:#880d47;
 }
 
 /* Header & Navbar */
@@ -59,7 +60,7 @@ body {
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--dark);
+  color:#880d47;
   text-decoration: none;
 }
 
@@ -74,7 +75,7 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: var(--dark);
+  color:#880d47;
   font-weight: 500;
   padding: 0.5rem 0.8rem;
   border-radius: 6px;
@@ -93,6 +94,10 @@ body {
   color: var(--white);
   padding: 2rem 0;
   margin-top: auto;
+}
+
+.site-footer p {
+  color:var(--white);
 }
 
 .footer-content {
@@ -117,7 +122,8 @@ body {
 /* Hero Section */
 .hero {
   padding: 4rem 5%;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: linear-gradient(135deg, #f5f7fa 0%, #880d47 100%);
+  color:#880d47;
 }
 
 .hero-container {
@@ -137,7 +143,7 @@ body {
 
 .badge {
   background-color: var(--primary);
-  color: var(--white);
+  color:#880d47;
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
   font-size: 0.85rem;
@@ -147,6 +153,7 @@ body {
 .hero h1 {
   font-size: 2.5rem;
   margin: 1rem 0;
+  color:#880d47;
 
 }
 
@@ -159,6 +166,7 @@ body {
   display: flex;
   justify-content: center;
   min-width: 250px;
+  border-color: #880d47;
 }
 
 .hero-avatar {
@@ -168,6 +176,7 @@ body {
   border-radius: 50%;
   border: 5px solid var(--white);
   box-shadow: var(--shadow-md);
+  border: 5px solid #880d47;
 }
 
 /* Buttons */
@@ -184,16 +193,17 @@ body {
 
 .btn-primary {
   background-color: var(--primary);
-  color: var(--white);
+  color:#880d47;
 }
 
 .btn-primary:hover {
-  background-color: var(--primary-dark);
+  background-color: #880d47;
+  color: var(--white);
 }
 
 .btn-outline {
-  border: 2px solid var(--primary);
-  color: var(--primary);
+  border: 2px solid #880d47;
+  color: #880d47;
 }
 
 .btn-outline:hover {
@@ -209,6 +219,7 @@ body {
 .section-title {
   text-align: center;
   margin-bottom: 2.5rem;
+  color:#880d47;
 }
 
 .features-grid {
@@ -223,6 +234,7 @@ body {
   border-radius: var(--radius);
   box-shadow: var(--shadow-sm);
   text-align: center;
+  color:#880d47;
 }
 
 .feature-icon {
@@ -244,11 +256,13 @@ body {
 
 .profile-card {
   background: var(--white);
+  background-color: #ffebf2;
   padding: 1.5rem;
   border-radius: var(--radius);
   box-shadow: var(--shadow-sm);
   text-align: center;
   height: fit-content;
+  color:#880d47;
 }
 
 /* Requirements: 3:4 aspect ratio, max-width 200px */
@@ -263,10 +277,12 @@ body {
 
 .card {
   background: var(--white);
+  background-color:#ffd1e1;
   padding: 1.5rem;
   border-radius: var(--radius);
   box-shadow: var(--shadow-sm);
   margin-bottom: 1.5rem;
+  color:#880d47;
 }
 
 .academic-table {
@@ -307,7 +323,7 @@ body {
 .gallery-card {
   flex: 1 1 300px;
   max-width: 350px;
-  background: var(--white);
+  background: #ffd1e1;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
@@ -326,7 +342,7 @@ body {
 }
 
 .gallery-caption {
-  padding: 1rem;
+  padding: 1rem; 
 }
 
 /* Contact Page Grid */
